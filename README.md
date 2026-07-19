@@ -4,7 +4,7 @@
 
 Relay watches your server in real time, detects raids, spam, and destructive activity, and routes clear alerts to your mod team. Moderators stay in control — Relay detects and proposes; kick, ban, timeout, lockdown, and slowmode only run after a human approves them.
 
-[Invite Relay](https://discord.com/oauth2/authorize?client_id=1070480873201340466&scope=bot%20applications.commands&permissions=1099511712950) · [Privacy Policy](./privacy.html) · [Terms of Service](./terms.html)
+[Invite Relay](https://discord.com/oauth2/authorize?client_id=1070480873201340466&scope=bot%20applications.commands&permissions=1099511712950) · [[Privacy Policy](./privacy.html)](https://relayapp.xyz/privacy.html) · [[Terms of Service](./terms.html)](https://relayapp.xyz/terms.html)
 
 ---
 
@@ -114,7 +114,7 @@ Relay is designed for moderation signal, not surveillance:
 - Does not use LLMs on your messages
 - Server admins control alert routing and action mode
 
-See the [Privacy Policy](./privacy.html) for details.
+See the [./privacy.html ](http://relayapp.xyz/privacy.html) for details.
 
 ---
 
@@ -139,24 +139,12 @@ Roadmap ideas: deeper analytics, premium retention tiers, and cross-server patte
 
 ---
 
-## For recruiters / engineers
-
-This project demonstrates:
-
-- Real-time event pipelines (Discord Gateway → API)
-- Rule-based detection with sliding windows
-- Permission-safe automation with human review
-- Full-stack TypeScript (bot + NestJS + Next.js)
-- Operational concerns: auditability, least-privilege Discord perms, no black-box bans
-
----
-
 ## Links
 
 - **Invite:** https://discord.com/oauth2/authorize?client_id=1070480873201340466&scope=bot%20applications.commands&permissions=1099511712950  
-- **Privacy:** ./privacy.html  
-- **Terms:** ./terms.html  
-- **Contact:** [your-email@example.com]
+- **Privacy:** [./privacy.html ](http://relayapp.xyz/privacy.html) 
+- **Terms:** [./terms.html](https://relayapp.xyz/terms.html)  
+- **Contact:** relaybotsupport@gmail.com
 
 ---
 
