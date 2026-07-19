@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relay - One-click raid defense for your Discord</title>
+<meta name="description" content="Relay detects raids, spam bursts, and suspicious new members in your Discord server, then puts every action in a review queue for a moderator to approve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="#" class="brand">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="8" fill="#6D75F6"/>
+        <path d="M9 8.5C9 7.67 9.67 7 10.5 7H15.5C17.98 7 20 9.02 20 11.5C20 13.42 18.79 15.06 17.09 15.69L19.5 20.5C19.87 21.24 19.34 22 18.5 22C18.03 22 17.6 21.73 17.39 21.31L14.62 15.75H12V20.75C12 21.44 11.44 22 10.75 22C10.06 22 9.5 21.44 9.5 20.75V8.5H9Z" fill="white"/>
+        <circle cx="15" cy="11.5" r="2.25" fill="#6D75F6"/>
+      </svg>
+      Relay
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="https://discord.com/oauth2/authorize?client_id=1070480873201340466&scope=bot%20applications.commands&permissions=1099511712950" class="btn btn-primary btn-sm">
+        Invite Relay
+      </a>
+      <button class="nav-menu-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>One-click raid defense<br>for your <em>Discord</em></h1>
+    <p class="hero-sub">
+      Detects raids, spam bursts, and suspicious new members. Every action waits
+      for moderator approval, never a silent auto-ban.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://discord.com/oauth2/authorize?client_id=1070480873201340466&scope=bot%20applications.commands&permissions=1099511712950" class="btn btn-primary">
+        Invite Relay
+      </a>
+      <a href="#features" class="btn btn-secondary">See how it works</a>
+    </div>
+  </div>
+
+  <div class="fact-strip">
+    <span class="fact-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z"/></svg>
+      Review-queue by default
+    </span>
+    <span class="fact-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      No full message storage
+    </span>
+    <span class="fact-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+      Free while in beta
+    </span>
+  </div>
+</header>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <h2>Three steps, one server</h2>
+      <p>No auto-bans on day one. Relay watches, flags, and waits for a human.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Detect</h3>
+        <p>Relay watches joins and messages for raid, spam, and abuse signals in real time.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Review</h3>
+        <p>Flagged activity lands in a queue with the evidence, not a verdict.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Approve</h3>
+        <p>A moderator approves or dismisses. Relay only acts once someone says go.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2>What Relay actually watches for</h2>
+      <p>Four detection surfaces, each feeding the same review queue.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Raid detection</h3>
+        <p>Flags abnormal join bursts, new-account waves, and coordinated pile-ons before they flood your channels.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 2l7 3v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V5l7-3z"/></svg>
+        </div>
+        <h3>Review queue</h3>
+        <p>Every flagged action, kick, timeout, or lockdown, sits in a queue with context until a moderator approves it.</p>
+        <span class="badge-inline">No action fires without a human</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <h3>Spam and mention abuse</h3>
+        <p>Catches message floods, mass-mention pings, and repeated content across channels before they bury a conversation.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>Server-wide lockdown</h3>
+        <p>For active threats, raise verification level and pause invites for the whole server with one approval.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2>Questions server owners ask</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item" open>
+        <summary>
+          Does Relay ban people automatically?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <p>No. Relay's default mode is review-queue only: it flags suspicious activity and waits for a moderator to approve or dismiss it before anything happens to a member.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Does Relay store my members' messages?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <p>Relay is built to analyze moderation signals, not archive conversations. It does not intentionally store complete message contents. See the <a href="privacy.html">Privacy Policy</a> for full detail.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          What permissions does Relay need?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <p>Only what the features you enable require, view channels and message history for detection, plus kick, timeout, ban, and manage-server permissions if you turn on the review-queue actions that use them.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          Is Relay free?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <p>Relay is currently free while in beta. If paid tiers are introduced later, pricing will be disclosed before anything is charged.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="#6D75F6"/>
+            <path d="M9 8.5C9 7.67 9.67 7 10.5 7H15.5C17.98 7 20 9.02 20 11.5C20 13.42 18.79 15.06 17.09 15.69L19.5 20.5C19.87 21.24 19.34 22 18.5 22C18.03 22 17.6 21.73 17.39 21.31L14.62 15.75H12V20.75C12 21.44 11.44 22 10.75 22C10.06 22 9.5 21.44 9.5 20.75V8.5H9Z" fill="white"/>
+            <circle cx="15" cy="11.5" r="2.25" fill="#6D75F6"/>
+          </svg>
+          Relay
+        </a>
+        <p>Review-queue moderation for Discord servers. Detects first, asks before it acts.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="https://github.com/miradamkhan/discordsecuritybot">GitHub</a></li>
+            <li><a href="mailto:relaybotsupport@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Relay. Not affiliated with Discord Inc.</span>
+      <span>Built for server owners, not sold to them.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
